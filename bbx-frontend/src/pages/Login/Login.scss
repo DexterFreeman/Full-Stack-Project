@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: monospace;
 }
 body{
     background-color: #080710;
@@ -44,7 +45,7 @@ body{
     right: -30px;
     bottom: -80px;
     animation-name: flo;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 form{

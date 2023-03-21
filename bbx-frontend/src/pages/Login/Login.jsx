@@ -1,7 +1,14 @@
 import React from "react";
-import "./Home.scss";
-const Home = () => {
-  console.log("THIS WORKED");
+import { useNavigate } from "react-router-dom";
+import "./Login.scss";
+const Login = () => {
+  let navigate = useNavigate(); 
+
+  const handleClick = (e) => {
+    e.preventDefault(); 
+    console.log("TEST")
+    navigate("/home")
+  }
   return (
     <>
       <div className="background">
@@ -14,10 +21,10 @@ const Home = () => {
         <input type="text" placeholder="Email or phone" id="username"></input>
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password"></input>
-        <button>Log In</button>
+        <button onClick={handleClick}>Log In</button>
       </form>
     </>
   );
 };
 
-export default Home;
+export default Login;
