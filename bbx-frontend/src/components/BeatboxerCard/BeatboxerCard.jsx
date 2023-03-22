@@ -6,6 +6,7 @@ const BeatboxerCard = ({
   realName,
   sounds,
   achievements,
+  image
 }) => {
   const achievementsJSX = achievements.map((achievement) => {
     return <li>{achievement.placement + ": "  + achievement.title + " (" + achievement.year  + ") " + achievement.battle_type}</li>;
@@ -16,7 +17,8 @@ const BeatboxerCard = ({
 
   return (
     <div className="beatboxer-card">
-      <h1>{name}</h1>
+      <img src={image} alt="image of beatboxer" />
+      <h1 className="beatboxer-card__title">{name}</h1>
       <h1>{nationality}</h1>
       <h2>({realName})</h2>
       <h3>Famous Sounds:</h3>

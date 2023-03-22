@@ -1,10 +1,8 @@
 .home-page{
-
     background-color: #080710;
- 
-    height: 100vh;
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
+    flex-wrap: wrap;
     h1{
         color: white;
     }
@@ -18,7 +16,8 @@
     }
     &__cards{
         display: flex;
-        gap: 10px;
+        flex-wrap: wrap;
+        gap: 12px;
     }
 }
 

@@ -10,4 +10,19 @@
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
+
+    img{
+        padding: 0;
+        height: 171px;
+        width: 396px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        margin: -50px -35px; 
+    }
+
+    &__title{
+        margin-top: 50px;
+        text-decoration: underline;
+        font-weight: bolder;
+    }
 }
