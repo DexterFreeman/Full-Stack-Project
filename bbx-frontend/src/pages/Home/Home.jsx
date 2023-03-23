@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react';
 import './Home.scss';
-import data from '../../data/data.json';
 import BeatboxerCard from '../../components/BeatboxerCard/BeatboxerCard';
+
 const Home = () => {
-  const cardJSX = data.map((bbxObject) => {return <BeatboxerCard name={bbxObject.name} nationality={bbxObject.nationality} realName={bbxObject.real_name} achievements={bbxObject.achievements} sounds={bbxObject.notable_sounds} image={bbxObject.thumbnail} />})
+
+
+  let [data, setData] = useState(null); 
+  let [cardJSX, setCardJSX] = useState(null); 
+  
+  useState(() => {
+    fetch("http://localhost:8081/beatboxers")
+    .then((response) => response.json())
+    .then((data) => {
+      setCardJSX(data.map((beatboxer) => {
+        return <BeatboxerCard key={beatboxer.id} name={beatboxer.name} nationality={beatboxer.nationality} realName={beatboxer.realName} sounds={beatboxer.notableSounds} achievements={beatboxer.achievements} image={beatboxer.thumbnail}/>
+      }))
+    })
+  }, [])
+
 
   return (
     <div className="home-page">
