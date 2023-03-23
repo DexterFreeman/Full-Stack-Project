@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FULL-STACK-PROJECT.iml" filepath="$PROJECT_DIR$/.idea/FULL-STACK-PROJECT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbx/bbx.iml" filepath="$PROJECT_DIR$/bbx/bbx.iml" />
     </modules>
   </component>
 </project>
