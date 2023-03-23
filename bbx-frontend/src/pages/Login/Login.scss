@@ -22,27 +22,54 @@ body{
         width: 200px;
         position: absolute;
         border-radius: 50%;
+        
     }
 }
 
 .shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #78c6fa
-    );
-    left: -80px;
+    background-image: url("../../assets/alem_login.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+    box-shadow: 0 0 6px 4px rgba(146,81,74, 0.6);
+    left: -110px;
     top: -80px;
     animation-name: flo;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
+.shape:nth-child(2){
+    background-image: url("../../assets/napom_login.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 6px 4px rgba(72, 171, 224, 0.6);
+    left: -400px;
+    top: 40px;
+    animation-name: flo;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+}
+.shape:nth-child(3){
+    background-image: url("../../assets/Pe4enkata_login.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 6px 4px rgba(2,2,172,0.6);
+    left: 640px;
+    top: 150px;
+    animation-name: flo;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+
+}
 .shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #fcc983
-    );
-    right: -30px;
+    background-image: url("../../assets/bart_login.jfif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 6px 4px rgba(96,14,97,0.6);
+    right: -120px;
     bottom: -80px;
     animation-name: flo;
     animation-duration: 6s;

@@ -14,6 +14,8 @@ const Login = () => {
       <div className="background">
         <div className="shape"></div>
         <div className="shape"></div>
+        <div className="shape"></div>
+        <div className="shape"></div>
       </div>
       <form>
         <h1> Login Here </h1>
