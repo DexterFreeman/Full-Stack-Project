@@ -2,11 +2,9 @@ import React, { useState } from 'react'
 import { useEffect } from 'react';
 import './Home.scss';
 import BeatboxerCard from '../../components/BeatboxerCard/BeatboxerCard';
-
+import {useAutoAnimate} from '@formkit/auto-animate/react'
+import NavbarContainer from '../../containers/navbar/NavbarContainer';
 const Home = () => {
-
-
-  let [data, setData] = useState(null); 
   let [cardJSX, setCardJSX] = useState(null); 
   
   useState(() => {
@@ -19,13 +17,14 @@ const Home = () => {
     })
   }, [])
 
+  const [animationParent] = useAutoAnimate(); 
 
   return (
+    
     <div className="home-page">
-        <header className='home-page__header'>
-          <h1>Home page</h1>
-        </header>
-        <div className="home-page__cards">
+        <NavbarContainer />
+      
+        <div className="home-page__cards" ref={animationParent}>
           {cardJSX && cardJSX}
         </div>
        

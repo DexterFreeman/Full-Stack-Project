@@ -10,7 +10,7 @@ const Login = () => {
     navigate("/home")
   }
   return (
-    <>
+    <div className="login-page">
       <div className="background">
         <div className="shape"></div>
         <div className="shape"></div>
@@ -25,7 +25,7 @@ const Login = () => {
         <input type="password" placeholder="Password" id="password"></input>
         <button onClick={handleClick}>Log In</button>
       </form>
-    </>
+    </div>
   );
 };
 
