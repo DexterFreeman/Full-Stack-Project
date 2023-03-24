@@ -8,10 +8,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import java.io.*;
-import java.time.LocalDate;
 import java.util.List;
-
-
 @Component
 public class BeatboxInitializer {
 

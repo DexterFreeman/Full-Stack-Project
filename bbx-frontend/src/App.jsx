@@ -6,6 +6,7 @@ import {Route, Routes} from "react-router-dom";
 import Login from './pages/Login/Login';
 import Home from './pages/Home/Home';
 import Create from './pages/Create/Create';
+import Beatboxer from './pages/Beatboxer/Beatboxer';
 const App = () => {
   return (    
     <Router>
@@ -13,6 +14,7 @@ const App = () => {
         <Route path='/' element={<Login />} />
         <Route path='/home' element={<Home />} /> 
         <Route path='/create' element={<Create />} /> 
+        <Route path='/beatboxer/:id' element={<Beatboxer />} /> 
       </Routes>
     </Router>
   );

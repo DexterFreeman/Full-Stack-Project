@@ -1,16 +1,10 @@
 package com.nology.bbx;
-
 import org.springframework.stereotype.Repository;
-import java.util.Random;
-
 import java.util.ArrayList;
-
+import java.util.List;
 @Repository
 public class BeatboxRepository {
-
     private ArrayList<Beatboxer> beatboxers = new ArrayList<>();
-
-
     public ArrayList<Beatboxer> getAllBeatboxers(){
         return beatboxers;
     }
@@ -28,6 +22,14 @@ public class BeatboxRepository {
     public Beatboxer addBeatboxer(Beatboxer beatboxer){
         beatboxers.add(beatboxer);
         return beatboxer;
+    }
+
+    public List<String> getBeatboxerNames(){
+        ArrayList<String> namesList = new ArrayList<>();
+        for (Beatboxer beatboxer : beatboxers) {
+            namesList.add(beatboxer.getName()); 
+        }
+        return namesList;
     }
 
     public boolean deleteBeatboxerByID(long ID){

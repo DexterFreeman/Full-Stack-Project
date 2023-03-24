@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000")
@@ -29,6 +27,12 @@ public class BeatboxController {
     @GetMapping("/beatboxer/{id}")
     public Beatboxer getBeatboxer(@PathVariable long id){
         return beatboxRepository.getBeatboxerByID(id);
+    }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("/beatboxers/list")
+    public List<String> getBeatboxerNames(){
+        return beatboxRepository.getBeatboxerNames();
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
