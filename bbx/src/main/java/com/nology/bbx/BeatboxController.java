@@ -16,46 +16,46 @@ import java.util.List;
 public class BeatboxController {
 
     @Autowired
-    BeatboxRepository beatboxRepository;
+    BeatboxService beatboxService;
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/beatboxers")
     public List<Beatboxer> getBeatboxers(){
-        return beatboxRepository.getAllBeatboxers();
+        return beatboxService.getAllBeatboxers();
 
     }
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/beatboxer/{id}")
     public Beatboxer getBeatboxer(@PathVariable long id){
-        return beatboxRepository.getBeatboxerByID(id);
+        return beatboxService.getBeatboxerByID(id);
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/beatboxers/list")
     public List<String> getBeatboxerNames(){
-        return beatboxRepository.getBeatboxerNames();
+        return beatboxService.getBeatboxerNames();
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
     @DeleteMapping("/beatboxer/{id}")
     public boolean deleteBeatboxer(@PathVariable long id){
-        return beatboxRepository.deleteBeatboxerByID(id);
+        return beatboxService.deleteBeatboxerByID(id);
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/beatboxer")
     public Beatboxer addBeatboxer(@RequestBody Beatboxer beatboxer){
-        return beatboxRepository.addBeatboxer(beatboxer);
+        return beatboxService.addBeatboxer(beatboxer);
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/beatboxer/random")
     public Beatboxer getRandomBeatboxer(){
         Random random = new Random(); 
-        return beatboxRepository.getBeatboxerByID(random.nextInt(beatboxRepository.getAllBeatboxers().size()));
+        return beatboxService.getBeatboxerByID(random.nextInt(beatboxService.getAllBeatboxers().size()));
     }
     
     @PutMapping("/beatboxer/{id}")
     public Beatboxer updateBeatboxer(@PathVariable long id, @RequestBody Beatboxer beatboxer){
-        return beatboxRepository.updateBeatboxer(id, beatboxer); 
+        return beatboxService.updateBeatboxer(id, beatboxer);
     }
 }

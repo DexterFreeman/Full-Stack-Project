@@ -4,6 +4,7 @@ import './Home.scss';
 import BeatboxerCard from '../../components/BeatboxerCard/BeatboxerCard';
 import {useAutoAnimate} from '@formkit/auto-animate/react'
 import NavbarContainer from '../../containers/navbar/NavbarContainer';
+import { Container } from 'react-bootstrap';
 const Home = () => {
   let [cardJSX, setCardJSX] = useState(null); 
   
@@ -23,11 +24,12 @@ const Home = () => {
     
     <div className="home-page">
         <NavbarContainer />
+        <Container>
       
         <div className="home-page__cards" ref={animationParent}>
           {cardJSX && cardJSX}
         </div>
-       
+        </Container>
     </div>
   )
 }
