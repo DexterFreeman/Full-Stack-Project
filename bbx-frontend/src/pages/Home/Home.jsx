@@ -12,7 +12,7 @@ const Home = () => {
     .then((response) => response.json())
     .then((data) => {
       setCardJSX(data.map((beatboxer) => {
-        return <BeatboxerCard key={beatboxer.id} name={beatboxer.name} nationality={beatboxer.nationality} realName={beatboxer.realName} sounds={beatboxer.notableSounds} achievements={beatboxer.achievements} image={beatboxer.thumbnail}/>
+        return <BeatboxerCard key={beatboxer.id} id={beatboxer.id} name={beatboxer.name} nationality={beatboxer.nationality} realName={beatboxer.realName} sounds={beatboxer.notableSounds} achievements={beatboxer.achievements} image={beatboxer.thumbnail}/>
       }))
     })
   }, [])

@@ -8,10 +8,30 @@ public class Beatboxer {
     private String name;
     private String nationality;
     private String realName;
+
+    private String description;
+
+    private String highlightVideo;
+
     private String thumbnail;
     private List<String> notableSounds;
     private List<Object> achievements;
 
+    public String getHighlightVideo() {
+        return highlightVideo;
+    }
+
+    public void setHighlightVideo(String highlightVideo) {
+        this.highlightVideo = highlightVideo;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
     public String getNationality() {
         return nationality;
     }
@@ -71,13 +91,16 @@ public class Beatboxer {
     public Beatboxer(){
 
     }
-    public Beatboxer(long id, String name, String nationality, String realName, String thumbnail, List<String> notableSounds, List<Object> achievements) {
+    public Beatboxer(long id, String name, String nationality, String realName, String description, String thumbnail, List<String> notableSounds, String highlightVideo, List<Object> achievements) {
         this.id = id;
         this.name = name;
         this.nationality = nationality;
         this.realName = realName;
+        this.description = description;
         this.thumbnail = thumbnail;
         this.notableSounds = notableSounds;
+        this.highlightVideo = highlightVideo;
         this.achievements = achievements;
+
     }
 }

@@ -1,0 +1,33 @@
+.beatboxInfo-page{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        &__titleAndDescription{
+            width: 50%;
+        }
+    }
+    
+
+    &__image{
+        height: auto;
+        width: 38%;
+    }
+
+    &__title{
+        
+        font-size: 70px;
+        text-decoration: underline;
+
+        .nationality{
+            font-size: 40px;
+        }
+    
+    }
+   
+}

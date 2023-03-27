@@ -4,8 +4,10 @@
             "name": "NaPom", 
             "nationality": "American", 
             "real_name": "Neil Patrick Meadows",
+            "description": "Neil Patrick Meadows, better known as NaPoM (Dr. NaPe in Loopstation battles), is an American beatboxer and looper. He is a current member of The Beatbox House. He is known for his unique lip rolls.",
             "thumbnail": "https://static.wikia.nocookie.net/beatbox/images/b/bb/NaPoM_GBB_2021.jpg/revision/latest?cb=20211224181220",
             "notable_sounds": ["Cough snare", "Lip roll"],
+            "highlight_video": "https://www.youtube.com/embed/L7pytHlzayE, NaPoM \uD83C\uDDFA\uD83C\uDDF8 I GRAND BEATBOX BATTLE 2021: WORLD LEAGUE I Solo Elimination",
             "achievements": [
                 {
                     "year": 2022, 
@@ -39,9 +41,11 @@
             "id": 2, 
             "name": "D-low", 
             "nationality": "English", 
+            "description": "Dan Lowes, better known as D-low (DJ-low in Loopstation battles), is an English beatboxer and looper. His wide range of sounds includes, but is not limited to, his unique inward bass and scratch sounds.",
             "real_name": "Dan Lowes", 
             "thumbnail": "https://ichef.bbci.co.uk/news/976/cpsprodpb/DA8E/production/_127005955_danbanner.jpg", 
             "notable_sounds": ["Inward bass", "Scratch"],
+            "highlight_video": "https://www.youtube.com/embed/AqL4RcC7a1Y,D-low \uD83C\uDDEC\uD83C\uDDE7 | GRAND BEATBOX BATTLE 2021: WORLD LEAGUE | Judge Showcase",
             "achievements": [
                 {
                     "year": 2021, 
@@ -74,9 +78,11 @@
             "id": 3, 
             "name": "King Inertia", 
             "nationality": "American",
-            "real_name": "Rome", 
+            "real_name": "Rome",
+            "description": "Rome, better known as King Inertia (also abbreviated to K.I.), formerly known as simply Inertia, is an American beatboxer.",
             "thumbnail": "https://static.wikia.nocookie.net/beatbox/images/1/18/Inertia_Beatbox_Television.jpg/revision/latest?cb=20200718013833", 
-            "notable_sounds": ["Inward Bass"], 
+            "notable_sounds": ["Inward Bass"],
+            "highlight_video": "https://www.youtube.com/embed/yZSVp2kn2SE, King Inertia \uD83C\uDDFA\uD83C\uDDF8 | 4th Place Compilation | GRAND BEATBOX BATTLE 2021: WORLD LEAGUE",
             "achievements": [
                 {
                     "year": 2022, 
@@ -109,9 +115,11 @@
             "id": 4, 
             "name": "Colaps", 
             "nationality": "French",
-            "real_name": "Julien Callewaert", 
+            "real_name": "Julien Callewaert",
+            "description": "Julien Callewaert,[1] better known as Colaps, is a French beatboxer.",
             "thumbnail": "https://i.scdn.co/image/ab67616d0000b273fa0223ad85b72277b00e07dd",
-            "notable_sounds": ["Double click", "Fast spit snare", "Reverse sound"], 
+            "notable_sounds": ["Double click", "Fast spit snare", "Reverse sound"],
+            "highlight_video": "https://www.youtube.com/embed/6ZHAoMYMHac, Colaps \uD83C\uDDEB\uD83C\uDDF7 | Winner&#39;s Compilation | GRAND BEATBOX BATTLE 2021: WORLD LEAGUE",
             "achievements": [
                 {
                     "year": 2021, 
@@ -144,9 +152,11 @@
             "id": 5, 
             "name": "Codfish", 
             "nationality": "Australian",
-            "real_name": "Jack Codling", 
+            "real_name": "Jack Codling",
+            "description": "Jack Codling, better known as Codfish, is an Australian beatboxer. He is most known for his melodic style and use of the throat bass.",
             "thumbnail": "data:image/jpeg;base64,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",
-            "notable_sounds": ["Inward lip roll", "Laser whistle", "Throat bass"], 
+            "notable_sounds": ["Inward lip roll", "Laser whistle", "Throat bass"],
+            "highlight_video": "https://www.youtube.com/embed/8BRuXSq99nM, CODFISH | Grand Beatbox Battle Champion 2018 Compilation",
             "achievements": [
                 {
                     "year": 2019, 
@@ -185,9 +195,11 @@
             "id": 6, 
             "name": "Helium", 
             "nationality": "Russian",
-            "real_name": "Peter Sarancha", 
+            "real_name": "Peter Sarancha",
+            "description": "Peter Sarancha, better known as Helium, is a Russian beatboxer.",
             "thumbnail": "https://static.wikia.nocookie.net/beatbox/images/5/5d/Helium3.jpg/revision/latest?cb=20211130171856",
-            "notable_sounds": ["Zipper", "K snare"], 
+            "notable_sounds": ["Zipper", "K snare"],
+            "highlight_video": "https://www.youtube.com/embed/dnMCGf3OLdw, Helium \uD83C\uDDF7\uD83C\uDDFA I GRAND BEATBOX BATTLE 2021: WORLD LEAGUE I Solo Elimination",
             "achievements": [
                 {
                     "year": 2022, 

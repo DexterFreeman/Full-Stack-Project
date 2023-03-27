@@ -37,14 +37,16 @@ public class BeatboxInitializer {
                 long id = (long) beatboxJSON.get("id");
                 String name = (String) beatboxJSON.get("name");
                 String nationality = (String) beatboxJSON.get("nationality");
+                String description = (String) beatboxJSON.get("description");
                 String realName = (String) beatboxJSON.get("real_name");
                 String thumbnail = (String) beatboxJSON.get("thumbnail");
+                String highlightVideo = (String) beatboxJSON.get("highlight_video");
                 List<String> notableSounds = (List<String>) beatboxJSON.get("notable_sounds");
                 List<Object> achievements = (List<Object>) beatboxJSON.get("achievements");
 
 
                 // HOW CAN WE USE THIS DATA?
-                beatboxRepository.addBeatboxer(new Beatboxer(id, name, nationality, realName, thumbnail, notableSounds,achievements));
+                beatboxRepository.addBeatboxer(new Beatboxer(id, name, nationality, realName, description, thumbnail, notableSounds, highlightVideo, achievements));
             }
 
         } catch (Exception e) {
