@@ -1,6 +1,8 @@
 package com.nology.bbx;
 import java.util.Random;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,43 +13,54 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin
 @RestController
 public class BeatboxController {
 
     @Autowired
     BeatboxService beatboxService;
-    @CrossOrigin(origins = "http://localhost:3000")
+
+
+
+
     @GetMapping("/beatboxers")
-    public List<Beatboxer> getBeatboxers(){
-        return beatboxService.getAllBeatboxers();
+    public ResponseEntity<List<Beatboxer>> getBeatboxers(){
+        return ResponseEntity.status(HttpStatus.OK).body(beatboxService.getAllBeatboxers());
 
     }
-    @CrossOrigin(origins = "http://localhost:3000")
+
     @GetMapping("/beatboxer/{id}")
-    public Beatboxer getBeatboxer(@PathVariable long id){
-        return beatboxService.getBeatboxerByID(id);
+    public ResponseEntity<Beatboxer> getBeatboxer(@PathVariable long id){
+        return ResponseEntity.status(HttpStatus.OK).body(beatboxService.getBeatboxerByID(id));
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("/beatboxer/{name}")
+    public ResponseEntity<Beatboxer> getBeatboxer(@PathVariable String name){
+        if(name == "" || name == null){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        }
+        return ResponseEntity.status(HttpStatus.OK).body(beatboxService.getBeatboxerByName(name));
+    }
+
+
     @GetMapping("/beatboxers/list")
-    public List<String> getBeatboxerNames(){
-        return beatboxService.getBeatboxerNames();
+    public ResponseEntity<List<String>> getBeatboxerNames(){
+        return ResponseEntity.status(HttpStatus.OK).body(beatboxService.getBeatboxerNames());
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+
     @DeleteMapping("/beatboxer/{id}")
     public boolean deleteBeatboxer(@PathVariable long id){
         return beatboxService.deleteBeatboxerByID(id);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+
     @PostMapping("/beatboxer")
-    public Beatboxer addBeatboxer(@RequestBody Beatboxer beatboxer){
-        return beatboxService.addBeatboxer(beatboxer);
+    public ResponseEntity<Beatboxer> addBeatboxer(@RequestBody Beatboxer beatboxer){
+        return ResponseEntity.status(HttpStatus.OK).body(beatboxService.addBeatboxer(beatboxer));
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+
     @GetMapping("/beatboxer/random")
     public Beatboxer getRandomBeatboxer(){
         Random random = new Random(); 

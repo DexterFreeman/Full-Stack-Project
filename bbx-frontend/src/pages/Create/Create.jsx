@@ -1,6 +1,6 @@
 import React from 'react'
 import './Create.scss'
-import NavbarContainer from '../../containers/navbar/NavbarContainer';
+import NavbarContainer from '../../containers/NavbarContainer/NavbarContainer';
 const Create = () => {
   return (
     <div className='create-page'>

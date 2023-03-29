@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavbarContainer from '../../containers/navbar/NavbarContainer';
+import NavbarContainer from '../../containers/NavbarContainer/NavbarContainer';
 import { useParams } from 'react-router-dom';
 import './Beatboxer.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';

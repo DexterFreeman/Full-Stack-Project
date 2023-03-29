@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import './Home.scss';
 import BeatboxerCard from '../../components/BeatboxerCard/BeatboxerCard';
 import {useAutoAnimate} from '@formkit/auto-animate/react'
-import NavbarContainer from '../../containers/navbar/NavbarContainer';
+import NavbarContainer from '../../containers/NavbarContainer/NavbarContainer';
 import { Container } from 'react-bootstrap';
 const Home = () => {
   let [cardJSX, setCardJSX] = useState(null); 

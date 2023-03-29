@@ -2,7 +2,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavbarContainer.scss";
 
-function Navbar() {
+const NavbarContainer = () => {
 	return (
 		<header className="header">
 			<h3 className="header__title">BBX</h3>
@@ -15,4 +15,4 @@ function Navbar() {
 	);
 }
 
-export default Navbar;
+export default NavbarContainer;

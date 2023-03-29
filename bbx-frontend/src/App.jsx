@@ -7,6 +7,7 @@ import Login from './pages/Login/Login';
 import Home from './pages/Home/Home';
 import Create from './pages/Create/Create';
 import Beatboxer from './pages/Beatboxer/Beatboxer';
+import Search from './pages/Search/Search';
 const App = () => {
   return (    
     <Router>
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/home' element={<Home />} /> 
         <Route path='/create' element={<Create />} /> 
         <Route path='/beatboxer/:id' element={<Beatboxer />} /> 
+        <Route path='/search' element={<Search />}/>
       </Routes>
     </Router>
   );

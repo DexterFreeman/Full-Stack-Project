@@ -6,29 +6,29 @@
             "real_name": "Neil Patrick Meadows",
             "description": "Neil Patrick Meadows, better known as NaPoM (Dr. NaPe in Loopstation battles), is an American beatboxer and looper. He is a current member of The Beatbox House. He is known for his unique lip rolls.",
             "thumbnail": "https://static.wikia.nocookie.net/beatbox/images/b/bb/NaPoM_GBB_2021.jpg/revision/latest?cb=20211224181220",
-            "notable_sounds": ["Cough snare", "Lip roll"],
+            "notable_sounds": "Cough snare, Lip roll",
             "highlight_video": "https://www.youtube.com/embed/L7pytHlzayE, NaPoM \uD83C\uDDFA\uD83C\uDDF8 I GRAND BEATBOX BATTLE 2021: WORLD LEAGUE I Solo Elimination",
             "achievements": [
                 {
-                    "year": "2022",
+                    "year": 2022, 
                     "placement": "First",
                     "title": "American Beatbox Championships",
                     "battle_type": "Solo"
                 },
                 {
-                    "year": "2021",
+                    "year": 2021, 
                     "placement": "First",
                     "title": "Beatbox To World Live",
                     "battle_type":  "Solo"
                 },
                 {
-                    "year": "2021",
+                    "year": 2021, 
                     "placement": "Top 16",
                     "title": "American Beatbox Championships",
                     "battle_type":  "Solo"
                 },
                 {
-                    "year": "2020",
+                    "year": 2020, 
                     "placement": "Top 16",
                     "title": "Mad Meal",
                     "battle_type": "Loop station"
@@ -48,25 +48,25 @@
             "highlight_video": "https://www.youtube.com/embed/AqL4RcC7a1Y,D-low \uD83C\uDDEC\uD83C\uDDE7 | GRAND BEATBOX BATTLE 2021: WORLD LEAGUE | Judge Showcase",
             "achievements": [
                 {
-                    "year": "2021",
+                    "year": 2021, 
                     "placement": "First", 
                     "title": "SBX Kickback Battle",
                     "battle_type": "Solo"
                 },
                 {
-                    "year": "2019",
+                    "year": 2019, 
                     "placement": "First", 
                     "title": "Grand Beatbox Battle",
                     "battle_type": "Solo"
                 },
                 {
-                    "year": "2019",
+                    "year": 2019, 
                     "placement": "Third", 
                     "title": "Grand Beatbox Battle",
                     "battle_type": "Tag Team"
                 },
                 {
-                    "year": "2018",
+                    "year": 2018, 
                     "placement": "Third", 
                     "title": "UK Beatbox Championships",
                     "battle_type":"Tag Team"
@@ -85,25 +85,25 @@
             "highlight_video": "https://www.youtube.com/embed/yZSVp2kn2SE, King Inertia \uD83C\uDDFA\uD83C\uDDF8 | 4th Place Compilation | GRAND BEATBOX BATTLE 2021: WORLD LEAGUE",
             "achievements": [
                 {
-                    "year": "2022",
+                    "year": 2022, 
                     "placement": "First", 
                     "title": "American Beatbox Championships",
                     "battle_type": "Tag Team"
                 },
                 {
-                    "year": "2022",
+                    "year": 2022, 
                     "placement": "Second", 
                     "title": "American Beatbox Championships",
                     "battle_type":  "Solo"
                 },
                 {
-                    "year": "2022",
+                    "year": 2022, 
                     "placement": "Top 8", 
                     "title": "Beatbox United Online Battle",
                     "battle_type": "Solo"
                 },
                 {
-                    "year": "2021",
+                    "year": 2021, 
                     "placement": "Forth", 
                     "title": "Grand Beatbox Battle",
                     "battle_type": "Solo"
@@ -122,25 +122,25 @@
             "highlight_video": "https://www.youtube.com/embed/6ZHAoMYMHac, Colaps \uD83C\uDDEB\uD83C\uDDF7 | Winner&#39;s Compilation | GRAND BEATBOX BATTLE 2021: WORLD LEAGUE",
             "achievements": [
                 {
-                    "year": "2021",
+                    "year": 2021, 
                     "placement": "First", 
                     "title": "Grand Beatbox Battle",
                     "battle_type": "Solo"
                 },
                 {
-                    "year": "2021",
+                    "year": 2021, 
                     "placement": "Second", 
                     "title": "Grand Beatbox Battle",
                     "battle_type": "Tag Team"
                 },
                 {
-                    "year": "2021",
+                    "year": 2021, 
                     "placement": "Second", 
                     "title": "One One Battle International",
                     "battle_type": "Solo"
                 },
                 {
-                    "year": "2019",
+                    "year": 2019, 
                     "placement": "Top 8",  
                     "title": "Vokal Total",
                     "battle_type": "Solo"
@@ -159,31 +159,31 @@
             "highlight_video": "https://www.youtube.com/embed/8BRuXSq99nM, CODFISH | Grand Beatbox Battle Champion 2018 Compilation",
             "achievements": [
                 {
-                    "year": "2019" ,
+                    "year": 2019, 
                     "placement": "Forth", 
                     "title": "Grand Beatbox Battle",
                     "battle_type": "Solo"
                 },
                 {
-                    "year": "2018" ,
+                    "year": 2018, 
                     "placement": "First", 
                     "title": "Grand Beatbox Battle",
                     "battle_type": "Solo"
                 },
                 {
-                    "year":  "2018" ,
+                    "year": 2018, 
                     "placement": "Second", 
                     "title": "World Beatbox Camp",
                     "battle_type": "Tag Team"
                 },
                 {
-                    "year":  "2018" ,
+                    "year": 2017, 
                     "placement": "First", 
                     "title": "Australian Beatbox Championships",
                     "battle_type": "Solo"
                 },
                 {
-                    "year":  "2017" ,
+                    "year": 2017, 
                     "placement": "Top 8", 
                     "title": "World Beatbox Camp",
                     "battle_type": "7 To Smoke"
@@ -202,25 +202,25 @@
             "highlight_video": "https://www.youtube.com/embed/dnMCGf3OLdw, Helium \uD83C\uDDF7\uD83C\uDDFA I GRAND BEATBOX BATTLE 2021: WORLD LEAGUE I Solo Elimination",
             "achievements": [
                 {
-                    "year": "2022",
+                    "year": 2022, 
                     "placement":"Top 16", 
                     "title": "Beatbox United Battle",
                     "battle_type": "Solo"
                 },
                 {
-                    "year": "2021",
+                    "year": 2021, 
                     "placement": "Top 16",  
                     "title": "Grand Beatbox Battle",
                     "battle_type": "Solo"
                 },
                 {
-                    "year": "2021",
+                    "year": 2021, 
                     "placement":"First", 
                     "title": "V1 Battle",
                     "battle_type": "Solo"
                 },
                 {
-                    "year": "2018",
+                    "year": 2018, 
                     "placement": "Top 16", 
                     "title": "Grand Beatbox Battle",
                     "battle_type": "Solo"

@@ -1,9 +1,18 @@
 package com.nology.bbx;
 
+import org.hibernate.annotations.Type;
+import org.hibernate.annotations.TypeDef;
+
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
+@Entity
 public class Beatboxer {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
     private String nationality;
@@ -14,8 +23,10 @@ public class Beatboxer {
     private String highlightVideo;
 
     private String thumbnail;
-    private List<String> notableSounds;
-    private List<Object> achievements;
+
+    private ArrayList<String> notableSounds;
+
+    private ArrayList<HashMap<String, String>> achievements;
 
     public String getHighlightVideo() {
         return highlightVideo;
@@ -76,22 +87,22 @@ public class Beatboxer {
         return notableSounds;
     }
 
-    public void setNotableSounds(List<String> notableSounds) {
+    public void setNotableSounds(ArrayList<String> notableSounds) {
         this.notableSounds = notableSounds;
     }
 
-    public List<Object> getAchievements() {
+    public ArrayList<HashMap<String, String>> getAchievements() {
         return achievements;
     }
 
-    public void setAchievements(List<Object> achievements) {
+    public void setAchievements(ArrayList<HashMap<String, String>> achievements) {
         this.achievements = achievements;
     }
 
     public Beatboxer(){
 
     }
-    public Beatboxer(long id, String name, String nationality, String realName, String description, String thumbnail, List<String> notableSounds, String highlightVideo, List<Object> achievements) {
+    public Beatboxer(long id, String name, String nationality, String realName, String description, String thumbnail, ArrayList<String> notableSounds, String highlightVideo, ArrayList<HashMap<String, String>> achievements) {
         this.id = id;
         this.name = name;
         this.nationality = nationality;
