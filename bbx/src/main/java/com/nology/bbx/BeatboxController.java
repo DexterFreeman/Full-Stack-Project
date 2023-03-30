@@ -20,9 +20,6 @@ public class BeatboxController {
     @Autowired
     BeatboxService beatboxService;
 
-
-
-
     @GetMapping("/beatboxers")
     public ResponseEntity<List<Beatboxer>> getBeatboxers(){
         return ResponseEntity.status(HttpStatus.OK).body(beatboxService.getAllBeatboxers());
@@ -30,18 +27,9 @@ public class BeatboxController {
     }
 
     @GetMapping("/beatboxer/{id}")
-    public ResponseEntity<Beatboxer> getBeatboxer(@PathVariable long id){
-        return ResponseEntity.status(HttpStatus.OK).body(beatboxService.getBeatboxerByID(id));
+    public Beatboxer getBeatboxer(@PathVariable long id){
+        return beatboxService.getBeatboxerByID(id);
     }
-
-    @GetMapping("/beatboxer/{name}")
-    public ResponseEntity<Beatboxer> getBeatboxer(@PathVariable String name){
-        if(name == "" || name == null){
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
-        }
-        return ResponseEntity.status(HttpStatus.OK).body(beatboxService.getBeatboxerByName(name));
-    }
-
 
     @GetMapping("/beatboxers/list")
     public ResponseEntity<List<String>> getBeatboxerNames(){
@@ -49,7 +37,7 @@ public class BeatboxController {
     }
 
 
-    @DeleteMapping("/beatboxer/{id}")
+    @DeleteMapping("/beatboxer/delete/{id}")
     public boolean deleteBeatboxer(@PathVariable long id){
         return beatboxService.deleteBeatboxerByID(id);
     }

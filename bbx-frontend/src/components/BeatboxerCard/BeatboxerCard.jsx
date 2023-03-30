@@ -11,6 +11,8 @@ const BeatboxerCard = ({
   image, 
   id
 }) => {
+
+  console.log(name + nationality, realName, sounds, achievements, image, id);
   const achievementsJSX = achievements.map((achievement) => {
     return <li>{achievement.placement + ": "  + achievement.title + " (" + achievement.year  + ") " + achievement.battle_type}</li>;
   });
@@ -30,9 +32,14 @@ const BeatboxerCard = ({
       <h1>{nationality}</h1>
       <h2>({realName})</h2>
       <h3>Famous Sounds:</h3>
+      <div className="beatboxer-card__sounds">
       <ul>{soundsJSX}</ul>
+      </div>
       <h3>Achievements:</h3>
-      <ul>{achievementsJSX}</ul>
+      <div className="beatboxer-card__achievements">
+        <ul>{achievementsJSX}</ul>
+      </div>
+      
     </div>
   );
 };

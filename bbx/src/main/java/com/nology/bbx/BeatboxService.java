@@ -21,12 +21,12 @@ public class BeatboxService {
     }
 
     public Beatboxer getBeatboxerByID(long ID){
-        Optional<Beatboxer> beatboxer = beatboxRepository.findById(ID);
-        if (beatboxer.isEmpty()){
-            return null;
+        for (Beatboxer beatboxer: beatboxRepository.findAll()) {
+            if(beatboxer.getId() == ID){
+                return beatboxer;
+            }
         }
-
-        return beatboxer.get();
+        return null;
 
     }
 

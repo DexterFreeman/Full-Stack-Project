@@ -10,7 +10,9 @@
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
-
+    h1,h2,h3,p,ul,li{
+      background-color: rgba(40, 44, 60, 0.13);
+    }
     img{
         padding: 0;
         height: 171px;
@@ -25,4 +27,21 @@
         text-decoration: underline;
         font-weight: bolder;
     }
+
+    &__achievements{
+        height: 90px;
+        overflow: scroll;
+        background-color: rgba(40, 44, 60, 0.13);
+    }
+
+    &__sounds{
+        height: 40px;
+        overflow: scroll;
+        background-color: rgba(40, 44, 60, 0.13);
+    }
+}
+
+.beatboxer-card:hover{
+    transform: scale(1.02);
+    transition: 250ms ease-in-out;
 }
