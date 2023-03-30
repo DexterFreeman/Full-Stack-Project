@@ -17,7 +17,7 @@ const achievementsJSX = beatboxer.achievements.map((achievement) => {
           <p className="beatboxInfo-page__description">{beatboxer.description}</p>
           </div>
          
-          <img src={beatboxer.thumbnail} alt="image of beatboxer" srcset="" className='beatboxInfo-page__image' />
+          <img src={beatboxer.thumbnail.split(".jpg")[0] + ".jpg"} alt="image of beatboxer"  className='beatboxInfo-page__image' />
         </Container>
         <h3>Achievements:</h3>
           <ul>{achievementsJSX}</ul>

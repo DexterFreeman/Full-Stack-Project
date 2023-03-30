@@ -6,104 +6,20 @@
   flex-wrap: wrap;
   color: white;
 
-  &__inputsContainer {
-    width: 50%;
-  }
-  &__upload::-webkit-file-upload-button {
-    visibility: hidden;
-  }
 
-  &__upload::before {
-    content: "Select some files";
-    display: inline-block;
-    background: linear-gradient(top, #f9f9f9, #e3e3e3);
-    border: 1px solid #999;
-    border-radius: 3px;
-    padding: 5px 8px;
-    outline: none;
-    white-space: nowrap;
-    -webkit-user-select: none;
-    cursor: pointer;
-    text-shadow: 1px 1px #fff;
-    font-weight: 700;
-    font-size: 10pt;
-  }
-
-  &__upload:hover::before {
-    border-color: black;
-  }
-  &__upload:active::before {
-    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
-  }
-  form {
-    margin-top: 3%;
-    height: 80vh;
-    width: 80vw;
+  form{
+    margin: 10%;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.13);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-    padding: 50px 35px;
-    .create-page__title {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 1;
-      font-size: 32px;
-      font-weight: 500;
-      line-height: 42px;
-      text-align: center;
-      width: 100%;
+    input{
+      background-color: white;
+      
+    }
+    select{
+      background: white;
     }
   }
-  form * {
-    font-family: "Poppins", sans-serif;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    outline: none;
-    border: none;
-  }
 
-  label {
-    display: block;
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  input {
-    display: block;
-    height: 50px;
-    width: 90%;
-    background-color: rgba(255, 255, 255, 0.07);
-    border-radius: 3px;
-    padding: 0 10px;
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: 300;
-    margin-right: 25px;
-  }
-  ::placeholder {
-    color: #e5e5e5;
-  }
+  
 
-  button {
-    margin-top: 50px;
-    height: 80px;
-    margin-right: 25px;
-    width: 150px;
-    background-color: #ffffff;
-    color: #080710;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-  }
 }
