@@ -31,7 +31,7 @@ const Beatboxer = () => {
           method: "DELETE"
         })
         .then((response) => {
-          if (response){
+          if (response.OK){
             navigate("/home");
             
           }

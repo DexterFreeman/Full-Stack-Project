@@ -3,6 +3,7 @@ import "./Create.scss";
 import { useState } from "react";
 import NavbarContainer from "../../containers/NavbarContainer/NavbarContainer";
 import { Button, Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
   const [formInputs, setFormInputs] = useState([]);
@@ -14,12 +15,12 @@ const Create = () => {
   const [sounds, setSounds] = useState();
   const [featureVideo, setFeatureVideo] = useState();
   const [show, setShow] = useState(false);
-
+  const navigate = useNavigate(); 
   const handleSubmit = async (event) => {
     event.preventDefault();
     setShow(true)
     const formData = new FormData(event.target);
-
+    
     if (
       formData.get("year") === "" ||
       formData.get("placement") === "" ||
@@ -66,6 +67,7 @@ const Create = () => {
         achievements: formInputs,
       }),
     });
+    navigate("/home")
   };
 
   const handleDelete = (index) => {

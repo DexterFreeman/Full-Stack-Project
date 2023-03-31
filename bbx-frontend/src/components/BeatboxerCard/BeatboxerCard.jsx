@@ -12,7 +12,7 @@ const BeatboxerCard = ({
   id
 }) => {
 
-  console.log(name + nationality, realName, sounds, achievements, image, id);
+
   const achievementsJSX = achievements.map((achievement) => {
     return <li>{achievement.placement + ": "  + achievement.title + " (" + achievement.year  + ") " + achievement.battle_type}</li>;
   });

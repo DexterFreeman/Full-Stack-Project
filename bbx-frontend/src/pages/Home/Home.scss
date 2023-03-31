@@ -6,6 +6,24 @@
     h1{
         color: white;
     }
+    &__searchbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__label{
+        color: white;
+        font-size: 30px;
+    }
+    &__input{
+        height: 40px;
+        width: 200px;
+        background-color: rgba(0,0,0,0);
+        border: 2px solid gray;
+        border-radius: 5px;
+        padding: 5px;
+    }
 
     &__header{
         display: flex;
