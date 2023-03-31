@@ -6,17 +6,51 @@
   flex-wrap: wrap;
   color: white;
 
-
-  form{
-    margin: 10%;
+  &__input-container{
+    height: 50px;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    
+  }
+
+  &__achievement-inputs{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+   
+    input, select{
+      width: 250px;
+      height: 20px;
+    }
+
+    option{
+      background-color: white;
+    }
+    
+  }
+
+
+  form{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+
     input{
       background-color: white;
+
       
     }
     select{
       background: white;
+
     }
   }
 

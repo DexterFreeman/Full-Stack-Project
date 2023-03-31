@@ -1,7 +1,7 @@
 .beatboxer-card{
     height: 520px;
     width: 400px;
-    background-color: rgba(255,255,255,0.13);
+    background-color: #07182e;
     color: white;
     top: 50%;
     left: 50%;
@@ -11,12 +11,12 @@
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
     h1,h2,h3,p,ul,li{
-      background-color: rgba(40, 44, 60, 0.13);
+      background-color: rgba(40, 44, 60, 0);
     }
-    img{
+    &__image{
         padding: 0;
-        height: 171px;
-        width: 396px;
+        height: 190px;
+        width: 397px;
         border-top-right-radius: 8px;
         border-top-left-radius: 8px;
         margin: -50px -35px; 
@@ -30,18 +30,24 @@
 
     &__achievements{
         height: 90px;
-        overflow: scroll;
-        background-color: rgba(40, 44, 60, 0.13);
+        overflow-y: scroll;
+        background-color: rgba(40, 44, 60, 0);
+    }
+    &__achievements::-webkit-scrollbar{
+        display: none;
     }
 
     &__sounds{
         height: 40px;
-        overflow: scroll;
-        background-color: rgba(40, 44, 60, 0.13);
+        overflow-y: scroll;
+        background-color: rgba(40, 44, 60, 0);
+    }
+    &__sounds::-webkit-scrollbar{
+        display: none;
     }
 }
 
 .beatboxer-card:hover{
-    transform: scale(1.02);
+    transform: translateY(-1.5%);
     transition: 250ms ease-in-out;
 }

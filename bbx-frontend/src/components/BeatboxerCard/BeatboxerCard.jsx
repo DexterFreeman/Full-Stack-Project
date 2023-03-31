@@ -27,10 +27,10 @@ const BeatboxerCard = ({
 
   return (
     <div className="beatboxer-card" onClick={(e) => handleClick(e)}>
-      <img src={image} alt="image of beatboxer" />
+      <img src={image.split(".jpg")[0] + ".jpg"} alt="image of beatboxer" className="beatboxer-card__image"/>
       <h1 className="beatboxer-card__title">{name}</h1>
-      <h1>{nationality}</h1>
-      <h2>({realName})</h2>
+      <h2>{nationality}</h2>
+      <p>({realName})</p>
       <h3>Famous Sounds:</h3>
       <div className="beatboxer-card__sounds">
       <ul>{soundsJSX}</ul>

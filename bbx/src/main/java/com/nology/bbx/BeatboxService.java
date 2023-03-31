@@ -52,6 +52,14 @@ public class BeatboxService {
         return namesList;
     }
 
+    public List<String> getBeatboxerVideos(){
+        ArrayList<String> videoList = new ArrayList<>();
+        for (Beatboxer beatboxer : beatboxRepository.findAll()) {
+            videoList.add(beatboxer.getHighlightVideo());
+        }
+        return videoList;
+    }
+
     @Transactional
     public boolean deleteBeatboxerByID(long ID){
         for (Beatboxer beatboxer : beatboxRepository.findAll()) {

@@ -31,6 +31,12 @@ public class BeatboxController {
         return beatboxService.getBeatboxerByID(id);
     }
 
+    @GetMapping("/beatboxer/videos")
+    public List<String> getBeatboxerVideos(){
+        return beatboxService.getBeatboxerVideos();
+    }
+
+
     @GetMapping("/beatboxers/list")
     public ResponseEntity<List<String>> getBeatboxerNames(){
         return ResponseEntity.status(HttpStatus.OK).body(beatboxService.getBeatboxerNames());

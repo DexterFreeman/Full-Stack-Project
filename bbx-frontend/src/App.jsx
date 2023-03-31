@@ -8,6 +8,7 @@ import Home from './pages/Home/Home';
 import Create from './pages/Create/Create';
 import Beatboxer from './pages/Beatboxer/Beatboxer';
 import Search from './pages/Search/Search';
+import Routines from './pages/Routines/Routines';
 const App = () => {
   return (    
     <Router>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/create' element={<Create />} /> 
         <Route path='/beatboxer/:id' element={<Beatboxer />} /> 
         <Route path='/search' element={<Search />}/>
+        <Route path='/routines' element={<Routines />}/>
       </Routes>
     </Router>
   );
