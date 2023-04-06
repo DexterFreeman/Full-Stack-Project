@@ -189,21 +189,22 @@ const Create = () => {
         </form>
         <h3>Saved achievements:</h3>
         {formInputs.length > 0 && (
-          <div>
+          <div className="achievements-container">
             
-            <ul>
+        
               {formInputs.map((input, index) => (
-                <div key={index} className="saved-achievement">
+                <ul key={index} className="saved-achievement">
                   <li>
                     <p>Year: {input.year}</p>
                     <p>Placement: {input.placement}</p>
                     <p>Title: {input.title}</p>
                     <p>Battle Type: {input.battle_type}</p>
                   </li>
-                  <button onClick={() => handleDelete(index)}>Delete</button>
-                </div>
+                  <Button className="btn-danger" onClick={() => handleDelete(index)}>Delete</Button>
+            
+                </ul>
               ))}
-            </ul>
+        
           </div>
         )}
      
