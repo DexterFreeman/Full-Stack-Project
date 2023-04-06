@@ -4,6 +4,7 @@ import { useState } from "react";
 import NavbarContainer from "../../containers/NavbarContainer/NavbarContainer";
 import { Button, Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import BeatboxForm from "../../components/BeatboxForm/BeatboxForm";
 
 const Create = () => {
   const [formInputs, setFormInputs] = useState([]);
@@ -75,123 +76,15 @@ const Create = () => {
     newBattles.splice(index, 1);
     setFormInputs(newBattles);
   };
-
   return (
     <div className="create-page">
       <NavbarContainer />
       <Container>
         <h1 className="create-page__title ">Create new beatboxer </h1>
-        <form onSubmit={handleSubmit}>
-          <div className="create-page__input-container">
-            <label for="name"> Name </label>
-            <input
-              type="text"
-              required
-              id="name"
-              value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
-            ></input>
-          </div>
-          <div className="create-page__input-container">
-            <label for="nationality">Nationality</label>
-            <input
-              type="text"
-              required
-              id="nationality"
-              value={nationality}
-              onChange={(e) => {
-                setNationality(e.target.value);
-              }}
-            ></input>
-          </div>
-          <div className="create-page__input-container">
-            <label for="realName">Real name</label>
-            <input
-              type="text"
-              id="realName"
-              value={realName}
-              onChange={(e) => {
-                setRealName(e.target.value);
-              }}
-            ></input>
-          </div>
-          <div className="create-page__input-container">
-            <label for="desc">Description</label>
-            <input
-              type="text"
-              id="desc"
-              value={description}
-              onChange={(e) => {
-                setDescription(e.target.value);
-              }}
-            ></input>
-          </div>
-          <div className="create-page__input-container">
-            <label for="image">Image</label>
-            <input
-              type="text"
-              required
-              id="image"
-              value={image}
-              onChange={(e) => {
-                setImage(e.target.value);
-              }}
-            />
-            </div> 
-            <div className="create-page__input-container">
-            <label for="sounds">Sounds</label>
-            <input
-              type="text"
-              required
-              id="sounds"
-              value={sounds}
-              onChange={(e) => {
-                setSounds(e.target.value);
-              }}
-            ></input>
-            </div>
-            <div className="create-page__input-container">
-            <label for="video">Feature Video Embed</label>
-            <input
-              type="text"
-              required
-              id="video"
-              value={featureVideo}
-              onChange={(e) => {
-                setFeatureVideo(e.target.value);
-              }}
-            ></input>
-          </div>
-          <div className="create-page__achievement-inputs">
-            <h2>Add achievements:</h2>
-          <label htmlFor="year">Year:</label>
-          <input type="text" id="year" name="year" required />
-
-          <label htmlFor="placement">Placement:</label>
-          <input type="text" id="placement" name="placement" required />
-
-          <label htmlFor="title">Title:</label>
-          <input type="text" id="title" name="title" required />
-
-          <label htmlFor="battle_type">Battle Type:</label>
-          <select id="battle_type" name="battle_type" required>
-            <option value="">Select a battle type</option>
-            <option value="Solo">Solo</option>
-            <option value="Tag Team">Tag Team</option>
-            <option value="Loop Station">Loop Station</option>
-            <option value="7 To Smoke">7 To Smoke</option>
-          </select>
-          <Button type="submit">Add Achievement</Button>
-          </div>
-          
-        </form>
+        <BeatboxForm handleSubmit={handleSubmit} setName={setName} setNationality={setNationality} setDescription={setDescription} setImage={setImage} setRealName={setRealName} setSounds={setSounds} setFeatureVideo={setFeatureVideo}  />
         <h3>Saved achievements:</h3>
         {formInputs.length > 0 && (
           <div className="achievements-container">
-            
-        
               {formInputs.map((input, index) => (
                 <ul key={index} className="saved-achievement">
                   <li>
@@ -204,14 +97,11 @@ const Create = () => {
             
                 </ul>
               ))}
-        
           </div>
         )}
-     
           <Button className={show ? "btn btn-primary" : "btn-primary disabled"}  onClick={handleFormSubmit}>
             Submit
           </Button>
-    
       </Container>
     </div>
   );
