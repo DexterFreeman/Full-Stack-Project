@@ -17,9 +17,9 @@ const Login = () => {
         <div className="shape"></div>
         <div className="shape"></div>
       </div>
-      <form>
+      <form className="login-page__form">
         <h1> Login Here </h1>
-        <label for="username"> Username </label>
+        <label for="username">Username</label>
         <input type="text" placeholder="Email or phone" id="username"></input>
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password"></input>

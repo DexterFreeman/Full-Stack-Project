@@ -16,12 +16,12 @@ const Create = () => {
   const [sounds, setSounds] = useState();
   const [featureVideo, setFeatureVideo] = useState();
   const [show, setShow] = useState(false);
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setShow(true)
+    setShow(true);
     const formData = new FormData(event.target);
-    
     if (
       formData.get("year") === "" ||
       formData.get("placement") === "" ||
@@ -29,6 +29,12 @@ const Create = () => {
       formData.get("battle_type") === "Select a battle type"
     ) {
       alert("Please fill in all the required fields.");
+      return;
+    } else if (
+      formData.get("year") > new Date().getFullYear() ||
+      formData.get("year") < 2000
+    ) {
+      alert("Please enter a valid year");
       return;
     }
 
@@ -68,7 +74,7 @@ const Create = () => {
         achievements: formInputs,
       }),
     });
-    navigate("/home")
+    navigate("/home");
   };
 
   const handleDelete = (index) => {
@@ -81,27 +87,43 @@ const Create = () => {
       <NavbarContainer />
       <Container>
         <h1 className="create-page__title ">Create new beatboxer </h1>
-        <BeatboxForm handleSubmit={handleSubmit} setName={setName} setNationality={setNationality} setDescription={setDescription} setImage={setImage} setRealName={setRealName} setSounds={setSounds} setFeatureVideo={setFeatureVideo}  />
+        <BeatboxForm
+          handleSubmit={handleSubmit}
+          setName={setName}
+          setNationality={setNationality}
+          setDescription={setDescription}
+          setImage={setImage}
+          setRealName={setRealName}
+          setSounds={setSounds}
+          setFeatureVideo={setFeatureVideo}
+        />
         <h3>Saved achievements:</h3>
         {formInputs.length > 0 && (
-          <div className="achievements-container">
-              {formInputs.map((input, index) => (
-                <ul key={index} className="saved-achievement">
-                  <li>
-                    <p>Year: {input.year}</p>
-                    <p>Placement: {input.placement}</p>
-                    <p>Title: {input.title}</p>
-                    <p>Battle Type: {input.battle_type}</p>
-                  </li>
-                  <Button className="btn-danger" onClick={() => handleDelete(index)}>Delete</Button>
-            
-                </ul>
-              ))}
+          <div className="create-page__achievements">
+            {formInputs.map((input, index) => (
+              <ul key={index} className="create-page__achievement">
+                <li>
+                  <p>Year: {input.year}</p>
+                  <p>Placement: {input.placement}</p>
+                  <p>Title: {input.title}</p>
+                  <p>Battle Type: {input.battle_type}</p>
+                </li>
+                <Button
+                  className="btn-danger"
+                  onClick={() => handleDelete(index)}
+                >
+                  Delete
+                </Button>
+              </ul>
+            ))}
           </div>
         )}
-          <Button className={show ? "btn btn-primary" : "btn-primary disabled"}  onClick={handleFormSubmit}>
-            Submit
-          </Button>
+        <Button
+          className={show ? "btn-primary btn-submit" : "btn-primary disabled btn-submit"}
+          onClick={handleFormSubmit}
+        >
+          Submit
+        </Button>
       </Container>
     </div>
   );

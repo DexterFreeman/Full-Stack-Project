@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Container } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import "./BeatboxForm.scss";
 const BeatboxForm = ({
   handleSubmit,
   setName,
@@ -87,10 +88,10 @@ const BeatboxForm = ({
           }}
         ></input>
       </div>
-      <div className="create-page__achievement-inputs">
+      <div className="form__achievement-inputs">
         <h2>Add achievements:</h2>
         <label htmlFor="year">Year:</label>
-        <input type="text" id="year" name="year" required />
+        <input type="number" id="year" name="year" required />
 
         <label htmlFor="placement">Placement:</label>
         <input type="text" id="placement" name="placement" required />
@@ -99,14 +100,21 @@ const BeatboxForm = ({
         <input type="text" id="title" name="title" required />
 
         <label htmlFor="battle_type">Battle Type:</label>
-        <select id="battle_type" name="battle_type" required>
+        <select
+          id="battle_type"
+          defaultValue={"Select a battle type"}
+          name="battle_type"
+          required
+        >
           <option value="">Select a battle type</option>
           <option value="Solo">Solo</option>
           <option value="Tag Team">Tag Team</option>
           <option value="Loop Station">Loop Station</option>
           <option value="7 To Smoke">7 To Smoke</option>
         </select>
-        <Button type="submit">Add Achievement</Button>
+        <Button className="btn" type="submit">
+          Add Achievement
+        </Button>
       </div>
     </form>
   );

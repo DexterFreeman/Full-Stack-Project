@@ -4,57 +4,23 @@
   flex-wrap: wrap;
   color: white;
 
-  &__input-container{
+  &__input-container {
     height: 50px;
-    width: 250px;
+    width: 220px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
   }
 
-  &__achievement-inputs{
+  &__achievements {
     display: flex;
-    height: 200px;
-    width: 100%;
-    gap: 10px;
-    align-items: center;
-    text-align: center;
-   
-    input, select{
-      width: 250px;
-      height: 20px;
-    }
-
-    option{
-      background-color: white;
-    }
-    
+    width: 80vw;
+    overflow-x: scroll;
   }
-
-
-  form{
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 20px;
-
-    input{
-      background-color: white;
-
-      
-    }
-    select{
-      background: white;
-
-    }
-  }
-
-  .achievements-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .btn-submit{
+    position: absolute;
+    top: 95%;
   }
 }
+
+

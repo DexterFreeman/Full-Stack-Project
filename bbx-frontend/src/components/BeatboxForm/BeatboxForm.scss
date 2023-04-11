@@ -1,0 +1,44 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+
+  input {
+    background-color: white;
+  }
+  select {
+    background: white;
+  }
+}
+
+.form {
+  &__achievement-inputs {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+
+    justify-content: flex-start;
+    input,
+    select {
+      width: 250px;
+      height: 20px;
+    }
+
+    option {
+      background-color: white;
+    }
+
+    .btn {
+      width: 150px;
+    }
+  }
+
+  .achievements-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

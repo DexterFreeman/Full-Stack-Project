@@ -1,47 +1,46 @@
 *,
 *:before,
-*:after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: monospace;
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
 }
-body{
-    background-color: #080710!important;
-}
-
-.login-page{
-    background-color: #080710!important;
-    .background{
-        width: 430px;
-        height: 520px;
-        position: absolute;
-        transform: translate(-50%,-50%);
-        left: 50%;
-        top: 50%;
-
-        .shape{
-            height: 200px;
-            width: 200px;
-            position: absolute;
-            border-radius: 50%;
-            
-        }
+body {
+  background-color: #080710 !important;
 }
 
-.shape:first-child{
+.login-page {
+  background-color: #080710 !important;
+  .background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+
+    .shape {
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      border-radius: 50%;
+    }
+  }
+
+  .shape:first-child {
     background-image: url("../../assets/alem_login.jfif");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;	
-    box-shadow: 0 0 6px 4px rgba(146,81,74, 0.6);
+    background-size: cover;
+    box-shadow: 0 0 6px 4px rgba(146, 81, 74, 0.6);
     left: -110px;
     top: -80px;
     animation-name: flo;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-}
-.shape:nth-child(2){
+  }
+  .shape:nth-child(2) {
     background-image: url("../../assets/napom_login.webp");
     background-position: center;
     background-repeat: no-repeat;
@@ -52,86 +51,86 @@ body{
     animation-name: flo;
     animation-duration: 5.5s;
     animation-iteration-count: infinite;
-}
-.shape:nth-child(3){
+  }
+  .shape:nth-child(3) {
     background-image: url("../../assets/Pe4enkata_login.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 0 6px 4px rgba(2,2,172,0.6);
+    box-shadow: 0 0 6px 4px rgba(2, 2, 172, 0.6);
     left: 640px;
     top: 150px;
     animation-name: flo;
     animation-duration: 5.5s;
     animation-iteration-count: infinite;
-
-}
-.shape:last-child{
+  }
+  .shape:last-child {
     background-image: url("../../assets/bart_login.jfif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 0 6px 4px rgba(96,14,97,0.6);
+    box-shadow: 0 0 6px 4px rgba(96, 14, 97, 0.6);
     right: -120px;
     bottom: -80px;
     animation-name: flo;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-}
-form{
-    height: 520px;
+  }
+  &__form {
     width: 400px;
-    background-color: rgba(255,255,255,0.13);
+    background-color: rgba(255, 255, 255, 0.13);
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    display: flex;
+    flex-direction: column;
     padding: 50px 35px;
-    h1{
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 42px;
-        text-align: center;
-        
+    h1 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 42px;
+      text-align: center;
     }
-    h1, label{
-        background-color: rgba(40, 44, 60, 0)
+    h1,
+    label {
+      background-color: rgba(40, 44, 60, 0);
     }
-}
-form *{
-    font-family: 'Poppins',sans-serif;
+  }
+  form * {
+    font-family: "Poppins", sans-serif;
     color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;
     border: none;
-}
+  }
 
-label{
+  label {
     display: block;
     margin-top: 30px;
     font-size: 16px;
     font-weight: 500;
-}
-input{
+  }
+  input {
     display: block;
     height: 50px;
     width: 100%;
-    background-color: rgba(255,255,255,0.07);
+    background-color: rgba(255, 255, 255, 0.07);
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
-}::placeholder{
+  }
+  ::placeholder {
     color: #e5e5e5;
-}
+  }
 
-
-button{
+  button {
     margin-top: 50px;
     height: 80px;
     width: 100%;
@@ -142,11 +141,11 @@ button{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
-}
+  }
 
-@keyframes flo {
-    50%{
-        transform: translateY(30px);
+  @keyframes flo {
+    50% {
+      transform: translateY(30px);
     }
-}
+  }
 }
