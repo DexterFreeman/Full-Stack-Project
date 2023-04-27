@@ -1,4 +1,6 @@
 package com.nology.bbx;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Random;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -26,6 +28,8 @@ public class BeatboxController {
 
     }
 
+
+
     @GetMapping("/beatboxer/{id}")
     public Beatboxer getBeatboxer(@PathVariable long id){
         return beatboxService.getBeatboxerByID(id);
@@ -42,6 +46,10 @@ public class BeatboxController {
         return ResponseEntity.status(HttpStatus.OK).body(beatboxService.getBeatboxerNames());
     }
 
+    @GetMapping("/beatboxers/nationality/{nationality}")
+    public List<Beatboxer> getBeatboxersByNationality(@PathVariable String nationality){
+        return beatboxService.getBeatboxersByNationality(nationality);
+    }
 
     @DeleteMapping("/beatboxer/delete/{id}")
     public boolean deleteBeatboxer(@PathVariable long id){

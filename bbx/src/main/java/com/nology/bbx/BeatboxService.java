@@ -4,10 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class BeatboxService {
@@ -71,10 +68,15 @@ public class BeatboxService {
         return false;
     }
 
+    public List<Beatboxer> getBeatboxersByNationality(String nationality){
+        return beatboxRepository.getAllByNationality(nationality);
+    }
+
     public Beatboxer updateBeatboxer(long id, Beatboxer newBeatboxer ){
         newBeatboxer.setId(id);
         beatboxRepository.save(newBeatboxer);
         return newBeatboxer;
     }
+
 
 }
